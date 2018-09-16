@@ -31,10 +31,10 @@ Indicating with `L` the length of a path, with `D` the total number if resources
 
 |   command  |        complexity        |  
 |------------|--------------------------|
-| create     |          *O* (L)         |
-| create_dir |          *O* (L)         |
+| create     |  *O* (L)                 |
+| create_dir |  *O* (L)                 |
 | read       |  *O* (L + contentLength) |
 | write      |  *O* (L + contentLength) |
-| delete     |          *O* (L)         |
-| delete_r   |        *O* (Dpath)       |
-| find       |        *O* (D + f<sup>2</sup>) |
+| delete     |  *O* (L)                 |
+| delete_r   |  *O* (Dpath)             |
+| find       |  *O* (D + f<sup>2</sup>) |
