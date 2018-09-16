@@ -27,15 +27,14 @@ The file system structure can distinguish among 8 different commands:
 
 ## Temporal Complexity
 The project required a maximum complexity to execute each input command given to the file system structure.  
-Indicating with `l` the length of a path, with `d` the total number if resources in the file system, with `Dpath` the number of sons of the specified resource and with `f` the number of resources found by the `find` command, required complexities are:  
+Indicating with `L` the length of a path, with `D` the total number if resources in the file system, with `Dpath` the number of sons of the specified resource, with `f` the number of resources found by the `find` command and with `contentLength` the length in bytes of the content of the specified file, required complexities are:  
 
 |   command  |       complexity        |  
 |------------|-------------------------|
-| create     |  *O*(l)                 |
-| create_dir |  *O*(l)                 |
-| read       |  *O*(l + contentLength) |
-| write      |  *O*(l + contentLength) |
-| delete     |  *O*(l)                 |
+| create     |  *O*(L)                 |
+| create_dir |  *O*(L)                 |
+| read       |  *O*(L + contentLength) |
+| write      |  *O*(L + contentLength) |
+| delete     |  *O*(L)                 |
 | delete_r   |  *O*(Dpath)             |
-| find       |  *O*(d + f<sup>2</sup>) |
-  
+| find       |  *O*(D + f<sup>2</sup>) |
