@@ -7,9 +7,9 @@ Algorithms and Data Structures - Politecnico di Milano, 2017
 A simple simulated file system structure that works totally in RAM.  
 It uses a tree structure to store directory contents, maintaining the file system structure.  
     
-Tree nodes (resources) con be files or directories.  
-Both have a name. Files can only be inserted as tree leaves, directories can also appear as intermediate nodes.  
-Only files con contain data, represented as a string with a maximum length of 255 characters.  
+Tree nodes (resources) can be files or directories.  
+Both have a name but files can only be inserted as tree leaves, directories can also appear as intermediate nodes.  
+Only files can contain data, represented as a string with a maximum length of 255 characters.  
 The root of the tree is the root directory and each directory can have a maximum of 1024 sons.  
 Resources paths follow the Unix syntax: the path is a sequence of names of resources, from the root to the requested file or directory. Each name is separed with `/` (es: `/dir/dir2/file0`).  
 Resources names are alphanumeric strings with a maximum length of 255 characters and the maximum tree height (and so the maximum path length) is 255 too.
