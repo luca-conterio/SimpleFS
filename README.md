@@ -36,7 +36,7 @@ The project required a maximum complexity to execute each input command given to
 | write      |  O(l + contentLength)   |
 | delete     |  O(l)                   |
 | delete_r   |  O(Dpath)               |
-| find       |  O(d + f<sup>2</sup>)    |
+| find       |  O(d + f<sup>2</sup>)   |
 
 l is the length of a path and d the total number if resources in the file system.
 Dpath is the number of sons of the specified resource.
