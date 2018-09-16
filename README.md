@@ -26,7 +26,8 @@ The file system structure can distinguish among 8 different commands:
 - `exit`: ends the file system execution.
 
 ## Temporal Complexity
-The project required a maximum complexity to execute each input command given to the file system structure:  
+The project required a maximum complexity to execute each input command given to the file system structure.  
+Indicating with l the length of a path, with d the total number if resources in the file system, with Dpath the number of sons of the specified resource and with f the number of resources found by the `find` command, the required complexities are:  
 
 |   command  |       complexity        |  
 |------------|-------------------------|
@@ -37,7 +38,4 @@ The project required a maximum complexity to execute each input command given to
 | delete     |  O(l)                   |
 | delete_r   |  O(Dpath)               |
 | find       |  O(d + f<sup>2</sup>)   |
-
-l is the length of a path and d the total number if resources in the file system.
-Dpath is the number of sons of the specified resource.
-f is the number of resources found by the `find` command.
+  
