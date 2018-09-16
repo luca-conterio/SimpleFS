@@ -26,3 +26,14 @@ The file system structure can distinguish among 8 different commands:
 - `exit`: ends the file system execution.
 
 ## Temporal Complexity
+The project required a maximum complexity to execute each input command given to the file system structure:  
+|   command  |       complexity        |  
+|------------|-------------------------|
+| create     |  O(l)                   |
+| create_dir |  O(l)                   |
+| read       |  O(l + contentLength)   |
+| write      |  O(l + contentLength)   |
+| delete     |  O(l)                   |
+| delete_r   |  O(Dpath)               |
+| find       |  O(d + f<sup>2)         |
+
