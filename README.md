@@ -1,4 +1,4 @@
-# SimpleFS  
+# Simple File System
 
 Algorithms and Data Structures - Politecnico di Milano, 2017
 
