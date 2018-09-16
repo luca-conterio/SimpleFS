@@ -7,7 +7,7 @@
 #define PATH_L             255
 #define PATH_STRING_L      65280+1   // altezza albero 255, lunghezza nomi risorse 255 e 255 slashes
 #define NAME_L             255+1
-#define DATA_L             50+1
+#define DATA_L             255+1
 #define MAX_SONS           1024
 #define DIR_T              'D'
 #define FILE_T             'F'
