@@ -4,7 +4,7 @@ Algorithms and Data Structures - Politecnico di Milano, 2017
 
 ## Overview
 
-A simple simulated file system structure that works totally in RAM.  
+A simulated file system structure that works totally in RAM.  
 It uses a tree structure to store directory contents, maintaining the file system structure.  
     
 Tree nodes (resources) can be files or directories.  
